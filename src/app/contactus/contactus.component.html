@@ -1,1 +1,13 @@
-<p>contactus works!</p>
+<div class="contact-form-container">
+    <!-- <h2>Contact Us</h2> -->
+    <form (ngSubmit)="onSubmit(form.value)" #form="ngForm">
+       <label>Your Name:</label>
+       <input type="text" name="name" placeholder="Your Name" required>
+       <label>Your Email:</label>
+       <input type="email" name="email" placeholder="Your Email" required>
+       <label>Your Message:</label>
+       <textarea name="message" placeholder="Your Message" required></textarea>
+       <button type="submit">Send Message</button>
+    </form>
+   </div>
+   
